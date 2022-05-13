@@ -1,13 +1,8 @@
-let host = "https://neuters.de";
+let host = "https://playsoju.netlify.app/?s=https://open.spotify.com";
 
-function redirectReuters(url) {
+function redirectSoju(url) {
     const path = url.pathname;
-    if (path.startsWith('/article/')
-        || path.startsWith('/pf/')
-        || path.startsWith('/arc/')
-        || path.startsWith('/resizer/')) {
-        return null;
-    } else if (path.endsWith('/')) {
+    if (path.endsWith('/')) {
         return `${host}${url.pathname}`;
     } else {
         return `${host}${url.pathname}/`;
@@ -20,7 +15,7 @@ browser.webRequest.onBeforeRequest.addListener(
         console.log(`Redirecting ${details.url}...`);
         const url = new URL(details.url);
         let redirect;
-        redirect = { redirectUrl: redirectReuters(url) };
+        redirect = { redirectUrl: redirectSoju(url) };
         if (redirect && redirect.redirectUrl) {
             console.info("Details", details);
         }
@@ -28,8 +23,7 @@ browser.webRequest.onBeforeRequest.addListener(
     },
     {
         urls: [
-            "*://reuters.com/*",
-            "*://www.reuters.com/*"
+          "*://open.spotify.com/*"
         ],
     },
     ["blocking"]

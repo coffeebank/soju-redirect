@@ -1,6 +1,6 @@
 {
-    "name": "Reuters Redirect",
-    "description": "Redirects Reuters articles to a more privacy and lightweight oriented frontend.",
+    "name": "Soju Redirect",
+    "description": "Redirects Spotify links to Soju",
     "manifest_version": 2,
     "version": "1.0",
     "background": {
@@ -13,8 +13,7 @@
     "content_scripts": [
         {
             "matches": [
-                "*://reuters.com/*",
-                "*://www.reuters.com/*"
+                "*://open.spotify.com/*"
             ],
             "js": [
                 "redirect.js"
@@ -25,7 +24,6 @@
     "permissions": [
         "webRequest",
         "webRequestBlocking",
-        "*://reuters.com/*",
-        "*://www.reuters.com/*"
+        "*://open.spotify.com/*"
     ]
 }

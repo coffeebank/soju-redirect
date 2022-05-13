@@ -1,23 +1,24 @@
-# Neuters - Reuters Redirect
+# Soju Redirect
 
-This is an alternative frontent to [Reuters](https://reuters.com/). It is intented to be lightweight and fast and was heavily inspired by [Nitter](https://nitter.net/).
+This is a Firefox addon for redirecting Spotify links to Soju.
 
-A sample is hosted on [neuters.de](https://neuters.de/)
+Soju lets you explore music from Spotify on any device easily. Soju fetches music metadata from Spotify and allows you to quickly preview tracks, albums, and playlists before choosing to add it to your Spotify account. Soju uses Netlify Functions and Netlify CDN, securing your access to Spotify.
 
-* No JavaScript or ads
-* No tracking
-* No cookies
-* Lightweight (usually <10KiB vs 50MiB from Reuters)
-* Dynamic Theming (respects system theme)
+ - No more interrupting your current queue
+ - No more waiting for songs to load as you're jumping around, when you just want to hear samples quickly
+ - No more unhappy Apple Music friends who couldn't get Spotify to work
+ 
+### [>>> See main Soju Repo <<<](https://github.com/coffeebank/soju)
 
-This is a work in progress. Please report any bugs or suggestions [above](https://github.com/HookedBehemoth/supreme-waffle/issues).
-
-## Contact
-If you have any questions, feel free to contact me at [admin@boxcat.site](mailto:admin@boxcat.site).
+<br>
 
 ## Credits
+* [HookedBehemoth/neuters](https://github.com/HookedBehemoth/neuters), a simple FOSS addon that redirects from Reuters to Neuters
 * [typed-html](https://github.com/bodil/typed-html), a fast and intuitive inline html macro
 * [cached](https://github.com/jaemk/cached), a macro for caching responses
 
 ## License
 This project is licensed under the GNU Affero General Public License.
+
+Forked from [HookedBehemoth/neuters](https://github.com/HookedBehemoth/neuters):
+- This project is licensed under the GNU Affero General Public License.
