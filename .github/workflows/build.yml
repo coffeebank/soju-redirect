@@ -9,6 +9,6 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         type: 'zip'
-        path: 'redirect'
+        directory: 'redirect'
         filename: 'soju-redirect-src.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
