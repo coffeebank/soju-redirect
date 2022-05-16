@@ -1,8 +1,8 @@
 {
     "name": "Soju - Redirect Spotify Links",
-    "description": "Redirects Spotify links to Soju",
+    "description": "Redirects Spotify links to Soju. Fetch a track's album, compare playlists, and sample different songs quickly and easily.",
     "manifest_version": 2,
-    "version": "0.1.0",
+    "version": "0.1.0.2",
     "background": {
         "scripts": [
             "redirect.js"
